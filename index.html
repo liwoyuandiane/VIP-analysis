@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="renderer" content="webkit"/>
+    <meta name="force-rendering" content="webkit"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+    <title>VIP视频解析</title>
+    <link rel="icon" href="https://jsjxh.club/%F0%9F%91%BB/%E5%9B%BE%E7%89%87/bitbug_favicon.ico" type="image/x-icon"/>
+    <link href="https://cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        #player
+        {
+            background-color: black;
+        }
+    </style>
+    <script src="https://cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script type = "text/javascript" > eval(function(p, a, c, k, e, d) {
+    e = function(c) {
+    return (c < a ? "": e(parseInt(c / a))) + ((c = c % a) > 35 ? String.fromCharCode(c + 29) : c.toString(36))
+    };
+    if (!''.replace(/^/, String)) {
+    while (c--) d[e(c)] = k[c] || e(c);
+    k = [function(e) {
+    return d[e]
+    }];
+    e = function() {
+    return '\\w+'
+    };
+    c = 1
+    };
+    while (c--) if (k[c]) p = p.replace(new RegExp('\\b' + e(c) + '\\b', 'g'), k[c]);
+    return p
+    } ('b a(){0 6=1.2("9").4;0 5=1.2("3");0 3=1.2("3").c;0 8=5.e[3].4;0 7=1.2("f");7.d=8+6}', 16, 16, 'var|document|getElementById|jk|value|jkurl|diz|cljurl|jkv|url|dihejk|function|selectedIndex|src|options|player'.split('|'), 0, {}))
+    </script>
+</head>
+<body>
+<br />
+<div class="container" style="padding-top:0px;" id="wbk">
+    <div class="alert alert-success alert-dismissible" role="alert">
+        <button type="button" class="close" data-dismiss="alert"> <span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <strong>将视频网站链接（例如：
+            <a href="https://www.iqiyi.com/" target="top">爱奇艺</a>、           <!-- 爱奇艺 -->
+            <a href="https://v.qq.com/" target="top">腾讯视频</a>、              <!-- 腾讯视频 -->
+            <a href="https://www.youku.com/" target="top">优酷</a>、             <!-- 优酷 -->
+            <a href="https://tv.sohu.com/" target="top">搜狐</a>、               <!-- 搜狐 -->
+            <a href="https://www.le.com/" target="top">乐视</a>、                <!-- 乐视 -->
+            <a href="https://www.mgtv.com/" target="top">芒果TV</a>、            <!-- 芒果TV -->
+            <a href="https://www.pptv.com/" target="top">PPTV</a>、              <!-- pptv -->
+            <a href="https://www.1905.com/" target="top">1905</a>               <!-- 1905 -->
+        等，支持解析M3U8链接）粘贴到视频地址输入框之后点击播放按钮即可。</strong>
+    </div>
+    <div class="col-md-14 column">
+        <div class="panel panel-default">
+            <div id="kj" class="panel-body">
+                <iframe src="" id="player" width="100%" height="600px" allowfullscreen='true' allow="autoplay" allowtransparency="true" frameborder="0" scrolling="no"> </iframe>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-14 column">
+        <form method="get">
+            <div class="input-group" style="width: 100%;">
+                <span class="input-group-addon input-lg" style="width: 80px; ">选择接口</span>
+                <select class="form-control input-lg" id="jk">
+                    <!-- <option rel="nofollow" value=""></option> -->
+                    <option rel="nofollow" value="https://jx5.178du.com/p1/?url=">电影盒子</option>
+                    <option rel="nofollow" value="https://z1.m1907.cn/?jx=" selected="">1907解析接口</option>
+                    <!--<option rel="nofollow" value="https://player.maqq.cn/?url=">Ma云</option>-->
+                    <option rel="nofollow" value="https://jx.52damu.com/dmjx/jiexi.php?url=">大幕接口</option>
+                    <option rel="nofollow" value="https://www.nxflv.com/?url=">诺讯接口1</option>
+                    <option rel="nofollow" value="https://www.ckmov.com/?url=">诺讯接口2</option>
+                    <option rel="nofollow" value="https://jx.parwix.com:4433/player/analysis.php?v=">纯净解析</option>
+                    <option rel="nofollow" value="https://z1.m1907.cn/?jx=">纯净接口</option>
+                    <option rel="nofollow" value="https://api.iztyy.com/jiexi/?url=">猪蹄接口</option>
+                    <option rel="nofollow" value="https://yparse.jn1.cc/index.php?url=">云解析</option>
+                    <option rel="nofollow" value="https://www.1717yun.com/jx/ty.php?url=">1717云1</option>
+                    <option rel="nofollow" value="https://www.1717yun.com/1717yun/?url=">1717云2</option>
+                    <option rel="nofollow" value="https://www.kpezp.cn/jlexi.php?url=">小蒋解析接口</option>
+                    <option rel="nofollow" value="https://www.ckmov.vip/api.php?url=">ckmov</option>
+                    <option rel="nofollow" value="https://www.h8jx.com/jiexi.php?url=">H8接口</option>
+                    <option rel="nofollow" value="https://svip.bljiex.cc/?v=">BL解析</option>
+                    <option rel="nofollow" value="https://jx.13tv.top/?url=">大亨解析接口</option>
+                    <option rel="nofollow" value="https://660e.com/?url=">乐乐云解析</option>
+                    <option rel="nofollow" value="https://www.administratorw.com/video.php?url=">无名小站接口</option>
+                    <option rel="nofollow" value="https://60jx.com/?url=">60解析</option>
+                    <option rel="nofollow" value="https://www.yemu.xyz/v/dmgs.php?url=">夜幕接口1</option>
+                    <option rel="nofollow" value="https://www.yemu.xyz/v/c.php?url=">夜幕接口2</option>
+                    <option rel="nofollow" value="https://jx.parwix.com:4433/player/?url=">Parwix解析</option>
+                    <option rel="nofollow" value="https://api.jiexi.la/?url=">解析la接口</option>
+                    <option rel="nofollow" value="http://www.ikukk.com/?url=">爱酷看看</option>
+                    <option rel="nofollow" value="https://jx.70808.net/?url=">4080解析</option>
+                    <option rel="nofollow" value="https://jx.blbo.cc:4433/?url=">人人迷解析</option>
+                    <option rel="nofollow" value="https://okjx.cc/?url=">OK解析接口1</option>
+                    <option rel="nofollow" value="https://api.okjx.cc:3389/jx.php?url=">OK解析接口2</option>
+                    <option rel="nofollow" value="https://lecurl.cn/?url=">lele全网解析</option>
+                    <option rel="nofollow" value="https://jx.xmflv.com/?url=">虾米解析</option>
+                    <option rel="nofollow" value="https://www.mtosz.com/m3u8.php?url=">Mao解析接口</option>
+                    <option rel="nofollow" value="http://jx.yparse.com/?url=">步步高解析接口</option>
+                    <option rel="nofollow" value="https://jx.618g.com/?url=">百域接口</option>
+                    <option rel="nofollow" value="https://jx.rdhk.net/?v=">RDHK接口</option>
+                    <option rel="nofollow" value="https://jx.m3u8.tv/jiexi/?url=">M3U8接口</option>
+                    <option rel="nofollow" value="http://jx.ivito.cn/?url=">维多解析</option>
+                    <option rel="nofollow" value="https://jx.rdhk.net/?v=">4080解析1</option>
+                    <option rel="nofollow" value="https://jx.52a.ink/?url=">4080解析2</option>                              
+                </select>
+            </div>
+            <br />
+            <div class="input-group" style="width: 100%;">
+                <span class="input-group-addon input-lg" style="width: 80px;">播放地址</span>
+                <input class="form-control input-lg" type="search" placeholder="输入播放地址" id="url" />
+            </div>
+            <br />
+            <div>
+                <button id="bf" type="button" class="btn btn-success btn-lg btn-block" onclick="dihejk()">开始播放</button>
+            </div>
+        </form>
+    </div>
+</div>
+<br />
+<div class="copyright">
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-sm-12">
+                <!--<br />-->
+              <!--  <span>Powered by:<a href="https://xianyang.cf/"> xianyang</a> <br> Copyright&copy;2022 All Rights Reserved.</span>  -->
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
